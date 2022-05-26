@@ -10,7 +10,11 @@ const UserSchema = new mongoose.Schema(
             default: false
         },
     },
-    { timestamp: true}
-    );
+    {
+        timestamps:{
+            createdAt: "crAt",
+            updatedAt: "upAt",
+    }
+});
 
     module.exports = mongoose.model("User",UserSchema);

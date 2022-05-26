@@ -18,9 +18,9 @@ mongoose
 });
 
 app.use(express.json());
-
-app.use("/api/users",userRoute);
 app.use("/api/auth",authRoute);
+app.use("/api/users",userRoute);
+
 
 
 app.listen( process.env.PORT || 3000, () =>{
