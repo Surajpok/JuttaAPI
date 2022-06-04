@@ -1,4 +1,5 @@
-const Order = require("../models/Order");
+const Order = require("../models/Order.js");
+
 const {
   verifyToken,
   verifyTokenAndAuthorization,
